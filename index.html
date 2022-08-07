@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <form class="form">
+
+        <h2 class="form_title">Datos Personales</h2>
+
+        <div class="form_container">
+
+            <div class="form_group">
+                <input type="number" id="id" class="form_input" placeholder=" " required>
+                <label for="id" class="form_label">Documento de Identificación</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" maxlength="50"  id="name" class="form_input" placeholder=" " required>
+                <label for="name" class="form_label">Nombre</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" maxlength="100"  id="direccion" class="form_input" placeholder=" " required>
+                <label for="direccion" class="form_label">Dirección</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" maxlength="25"  id="pais" class="form_input" placeholder=" ">
+                <label for="pais" class="form_label">Pais</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="email" id="email" class="form_input" placeholder=" ">
+                <label for="email" class="form_label">E-mail</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id="observaciones" class="form_input" placeholder=" ">
+                <label for="observaciones" class="form_label">Observaciones</label>
+                <span class="form_line"></span>
+            </div>
+
+            <h2 class="form_title">Datos Laborales</h2>
+
+            <div class="form_group">
+                <input type="text" id="name_emp" class="form_input" placeholder=" " required>
+                <label for="name_emp" class="form_label">Empresa</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="number" step="0.01" id="sueldo_or" class="form_input" placeholder=" " required>
+                <label for="sueldo_or" class="form_label">Sueldo Ordinario</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="number" step="0.01" id="bonificacion" class="form_input" placeholder=" " required>
+                <label for="bonificacion" class="form_label">Bonificación</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="number" step="0.01" id="otras_boni" class="form_input" placeholder=" ">
+                <label for="otras_boni" class="form_label">Otras Bonificaciones</label>
+                <span class="form_line"></span>
+            </div>
+
+            <input type="submit" class="form_submit" value="Enviar Datos">
+
+        </div>
+
+    </form>
+
+</body>
+</html>
